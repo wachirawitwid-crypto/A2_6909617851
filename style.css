@@ -1,0 +1,14 @@
+@import url('https://googleapis.com');
+
+#profile .row {
+    text-align: center;
+    /* ให้ข้อความอยู่ตรงกลาง */
+    padding: 4rem 1rem;
+    /* อันแรกคือแกนแนว y อันที่สองคือแกนแนว x */
+    background-color: #e0f2fe;
+    color: rgb(35, 34, 34);
+}
+
+body {
+    font-family: 'Outfit', 'Kanit', sans-serif;
+}
