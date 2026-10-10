@@ -12,3 +12,17 @@
 body {
     font-family: 'Outfit', 'Kanit', sans-serif;
 }
+
+.responsive-border {
+    border-top: 2px solid var(--bs-border-color-translucent);
+    padding-top: 1rem;
+}
+
+@media (min-width: 576px) {
+    .responsive-border {
+        border-top: none;
+        border-left: 2px solid var(--bs-border-color-translucent);
+        padding-top: 0;
+        padding-left: 1.5rem;
+    }
+}
