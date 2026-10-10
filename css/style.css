@@ -33,7 +33,7 @@ body {
 
 @media (min-width:991px){
     .nav-link {
-        border-bottom: none;
+        border-bottom: none; 
     }
 }
 
