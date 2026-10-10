@@ -22,7 +22,7 @@ body {
     border-bottom: #2e3a55 solid 2px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 765px) {
     .responsive-border {
         border-top: none;
         border-left: 2px solid var(--bs-border-color-translucent);
