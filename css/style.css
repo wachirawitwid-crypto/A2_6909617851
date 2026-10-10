@@ -18,6 +18,10 @@ body {
     padding-top: 1rem;
 }
 
+.nav-link {
+    border-bottom: #1f2d4e solid 2px;
+}
+
 @media (min-width: 576px) {
     .responsive-border {
         border-top: none;
@@ -26,6 +30,13 @@ body {
         padding-left: 1.5rem;
     }
 }
+
+@media (min-width:991px){
+    .nav-link {
+        border-bottom: none;
+    }
+}
+
 footer {
     bottom: 0;
     background-color: #0f172a;
