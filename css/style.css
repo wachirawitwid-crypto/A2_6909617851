@@ -22,6 +22,11 @@ body {
     border-bottom: #2e3a55 solid 2px;
 }
 
+#about_me .col-4 {
+  flex: 0 0 200px; 
+  max-width: 200px;
+}
+
 @media (min-width: 765px) {
     .responsive-border {
         border-top: none;
