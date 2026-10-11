@@ -154,73 +154,152 @@
 
         <!-- Card ใบที่ 1 -->
         <div class="col-12 col-lg-6 mb-3 d-flex">
-            <div class="card h-100 w-100 shadow-sm border-2 overflow-hidden">
-                <div class="row h-100 g-0 align-items-center">
-                    <!-- ฝั่งข้อความ (ซ้าย) -->
-                    <div class="col-7 col-md-7 d-flex flex-column h-100">
-                        <div class="card-body h-100 text-start d-flex flex-column">
-                            <div>
-                                <span class="badge bg-primary rounded-5 py-2 px-3 mb-2">Course Assignment</span>
-                                <h5 class="mt-2 fw-bold">CS100 Project: Myfirst CS100repo</h5>
-                                <div class="d-flex align-items-center gap-3 text-muted mt-3 small">
-                                    <div>
-                                        <i class="fa-solid fa-calendar me-1" style="color: #01294b;"></i> 10 Sep 2026
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-user me-1" style="color: #01294b;"></i> Individual
-                                        Developer
-                                    </div>
-                                </div>
-                                <p class="my-3">Role : Developer</p>
-                                <p class="my-3">พัฒนาเว็บไซต์ Learning Portfolio หน้าเดียวด้วย HTML และ CSS
-                                    โดยเน้นการจัดโครงสร้างเนื้อหาและการใช้ Semantic HTML</p>
-                                <h6 class="mt-2">Skills: HTML, CSS, Semantic HTML</h6>
-                            </div>
-
-                            <div class="mt-auto pt-3 px-2">
-                                <a class="btn d-inline-block rounded-5" style="border-color: #01294b; color: #01294b;"
-                                    href="https://github.com/wachirawitwid-crypto/myfirstcs100repo">
-                                    View My Profile <i class="fa-regular fa-share-from-square px-1"></i>
-                                </a>
-                            </div>
+            <div class="card h-lg-100 w-100 shadow-sm border-2">
+                <!-- 1. โครงสร้างสำหรับหน้าจอมือถือโดยเฉพาะ -->
+                <div class="d-block d-md-none card-body text-start">
+                    <!-- ส่วนที่ 1: หัวข้อ (อยู่บนสุด) -->
+                    <span class="badge bg-primary rounded-5 py-2 px-3 mb-2">Course Assignment</span>
+                    <h5 class="mt-2 fw-bold">CS100 Project: Myfirst CS100repo</h5>
+                    <div class="d-flex align-items-center gap-3 text-muted mt-3 small">
+                        <div>
+                            <i class="fa-solid fa-calendar me-1" style="color: #01294b;"></i> 10 Sep 2026
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-user me-1" style="color: #01294b;"></i> Individual Developer
                         </div>
                     </div>
-                    <!-- ฝั่งรูปภาพ (ขวา) -->
-                    <div class="col-5 col-md-5 text-center p-3" id="img">
+                    <p class="my-3">Role : Developer</p>
+
+                    <!-- ส่วนที่ 2: รูปภาพ (อยู่ตรงกลาง เมื่อหน้าจอทีขนาดเล็ก) -->
+                    <div class="text-center my-3">
                         <img src="https://img.magnific.com/premium-vector/laptop-vector-mockup-647546_982290-58.jpg?semt=ais_hybrid&w=740&q=80"
                             alt="Portfolio Image" class="img-fluid rounded-3"
                             style="max-height: 220px; object-fit: cover;">
                     </div>
+
+                    <!-- ส่วนที่ 3: เนื้อหายาว และปุ่ม View profile (อยู่ล่างสุด) -->
+                    <p class="my-3">พัฒนาเว็บไซต์ Learning Portfolio หน้าเดียวด้วย HTML และ CSS
+                        โดยเน้นการจัดโครงสร้างเนื้อหาและการใช้ Semantic HTML</p>
+                    <h6 class="mt-2">Skills: HTML, CSS, Semantic HTML</h6>
+
+                    <div class="pt-3">
+                        <a class="btn d-inline-block rounded-5" style="border-color: #01294b; color: #01294b;"
+                            href="https://github.com/wachirawitwid-crypto/myfirstcs100repo">
+                            View My Profile <i class="fa-regular fa-share-from-square px-1"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Card ใบที่ 2 -->
-        <div class="col-12 col-lg-6 mb-3 d-flex">
-            <div class="card h-100 w-100 shadow-sm border-2 overflow-hidden">
-                <div class="row h-100 g-0 align-items-center">
-                    <!-- ฝั่งข้อความ (ซ้าย) -->
-                    <div class="col-7 col-md-7 d-flex flex-column h-100">
-                        <div class="card-body h-100 text-start d-flex flex-column">
-                            <div class="align-item-center">
-                                <span class="badge bg-success rounded-5 py-2 px-3 mb-2">Course Assignment</span>
-                                <h5 class="mt-2 fw-bold">CS100 Project: M08_RatingComponent</h5>
-
-                                <div class="d-flex align-items-center gap-3 text-muted mt-3 small">
-                                    <div>
-                                        <i class="fa-solid fa-calendar me-1" style="color: #01294b;"></i> 25 Sep 2026
+                <!-- 2. โครงสร้างเดิมสำหรับจอคอมพิวเตอร์/แท็บเล็ต -->
+                <div class="d-none d-md-block h-100">       
+                    <div class="row h-100 g-0 align-items-center">
+                        <!-- ฝั่งข้อความ (ซ้าย) -->
+                        <div class="col-md-7 d-flex flex-column h-100">
+                            <div class="card-body h-100 text-start d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-primary rounded-5 py-2 px-3 mb-2">Course Assignment</span>
+                                    <h5 class="mt-2 fw-bold">CS100 Project: Myfirst CS100repo</h5>
+                                    <div class="d-flex align-items-center gap-3 text-muted mt-3 small">
+                                        <div>
+                                            <i class="fa-solid fa-calendar me-1" style="color: #01294b;"></i> 10 Sep
+                                            2026
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-user me-1" style="color: #01294b;"></i> Individual
+                                            Developer
+                                        </div>
                                     </div>
-                                    <div>
-                                        <i class="fa-solid fa-user me-1" style="color: #01294b;"></i> Individual
-                                        Developer
-                                    </div>
+                                    <p class="my-3">Role : Developer</p>
+                                    <p class="my-3">พัฒนาเว็บไซต์ Learning Portfolio หน้าเดียวด้วย HTML และ CSS
+                                        โดยเน้นการจัดโครงสร้างเนื้อหาและการใช้ Semantic HTML</p>
+                                    <h6 class="mt-2">Skills: HTML, CSS, Semantic HTML</h6>
                                 </div>
 
-                                <p class="my-3">Role : Developer</p>
-                                <p class="my-3">สร้าง Card Rating component ที่แสดงคะแนนออกมาโดยแบ่งเป็น 5-1 ดาว โดยใช้
-                                    bootstrap เพื่อตบแต่งให้สวยงาม</p>
-                                <h6 class="mt-2">Skills: HTML, CSS, Bootstrap</h6>
-                                <!-- ดันปุ่มลงล่างสุดของการ์ดด้วย mt-auto -->
+                                <div class="mt-auto pt-3 px-2">
+                                    <a class="btn d-inline-block rounded-5"
+                                        style="border-color: #01294b; color: #01294b;"
+                                        href="https://github.com/wachirawitwid-crypto/myfirstcs100repo">
+                                        View My Profile <i class="fa-regular fa-share-from-square px-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ฝั่งรูปภาพ (ขวา) -->
+                        <div class="col-md-5 text-center p-3">
+                            <img src="https://img.magnific.com/premium-vector/laptop-vector-mockup-647546_982290-58.jpg?semt=ais_hybrid&w=740&q=80"
+                                alt="Portfolio Image" class="img-fluid rounded-3"
+                                style="max-height: 220px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Card ใบที่ 2 -->
+        <div class="col-12 col-lg-6 mb-3 d-flex">
+            <div class="card h-lg-100 w-100 shadow-sm border-2">
+                <!-- 1. โครงสร้างสำหรับหน้าจอมือถือโดยเฉพาะ (แสดงเฉพาะจอมือถือ: d-block d-md-none) -->
+                <div class="d-block d-md-none card-body text-start">
+                    <!-- ส่วนที่ 1: หัวข้อ (อยู่บนสุด) -->
+                    <span class="badge bg-success rounded-5 py-2 px-3 mb-2">Course Assignment</span>
+                    <h5 class="mt-2 fw-bold">CS100 Project: M08_RatingComponent</h5>
+                    <div class="d-flex align-items-center gap-3 text-muted mt-3 small">
+                        <div>
+                            <i class="fa-solid fa-calendar me-1" style="color: #01294b;"></i> 25 Sep 2026
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-user me-1" style="color: #01294b;"></i> Individual Developer
+                        </div>
+                    </div>
+                    <p class="my-3">Role : Developer</p>
+
+                    <!-- ส่วนที่ 2: รูปภาพ (อยู่ตรงกลาง) -->
+                    <div class="text-center my-3">
+                        <img src="https://img.magnific.com/free-photo/3d-render-customer-leave-feedback-phone-screen_107791-16393.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="Portfolio Image" class="img-fluid rounded-3"
+                            style="max-height: 220px; object-fit: cover;">
+                    </div>
+
+                    <!-- ส่วนที่ 3: เนื้อหายาว ๆ และปุ่ม (อยู่ล่างสุด) -->
+                    <p class="my-3">สร้าง Card Rating component ที่แสดงคะแนนออกมาโดยแบ่งเป็น 5-1 ดาว โดยใช้ bootstrap
+                        เพื่อตบแต่งให้สวยงาม</p>
+                    <h6 class="mt-2">Skills: HTML, CSS, Bootstrap</h6>
+
+                    <div class="pt-3">
+                        <a class="btn d-inline-block rounded-5" style="border-color: #01294b; color: #01294b;"
+                            href="https://github.com/wachirawitwid-crypto/M08_RatingComponent">
+                            View My Profile <i class="fa-regular fa-share-from-square px-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. โครงสร้างเดิมสำหรับจอคอมพิวเตอร์/แท็บเล็ต (แสดงเฉพาะจอใหญ่: d-none d-md-block) -->
+                <div class="d-none d-md-block h-100">
+                    <div class="row h-100 g-0 align-items-center">
+                        <!-- ฝั่งข้อความ (ซ้าย) -->
+                        <div class="col-md-7 d-flex flex-column h-100">
+                            <div class="card-body h-100 text-start d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-success rounded-5 py-2 px-3 mb-2">Course Assignment</span>
+                                    <h5 class="mt-2 fw-bold">CS100 Project: M08_RatingComponent</h5>
+
+                                    <div class="d-flex align-items-center gap-3 text-muted mt-3 small">
+                                        <div>
+                                            <i class="fa-solid fa-calendar me-1" style="color: #01294b;"></i> 25 Sep
+                                            2026
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-user me-1" style="color: #01294b;"></i> Individual
+                                            Developer
+                                        </div>
+                                    </div>
+
+                                    <p class="my-3">Role : Developer</p>
+                                    <p class="my-3">สร้าง Card Rating component ที่แสดงคะแนนออกมาโดยแบ่งเป็น 5-1 ดาว
+                                        โดยใช้ bootstrap เพื่อตบแต่งให้สวยงาม</p>
+                                    <h6 class="mt-2">Skills: HTML, CSS, Bootstrap</h6>
+                                </div>
+
                                 <div class="mt-auto pt-3 px-2">
                                     <a class="btn d-inline-block rounded-5"
                                         style="border-color: #01294b; color: #01294b;"
@@ -230,15 +309,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- ฝั่งรูปภาพ (ขวา) -->
-                    <div class="col-5 col-md-5 text-center p-3">
-                        <img src="https://img.magnific.com/free-photo/3d-render-customer-leave-feedback-phone-screen_107791-16393.jpg?semt=ais_hybrid&w=740&q=80"
-                            alt="Portfolio Image" class="img-fluid rounded-3"
-                            style="max-height: 220px; object-fit: cover;">
+                        <!-- ฝั่งรูปภาพ (ขวา) -->
+                        <div class="col-md-5 text-center p-3">
+                            <img src="https://img.magnific.com/free-photo/3d-render-customer-leave-feedback-phone-screen_107791-16393.jpg?semt=ais_hybrid&w=740&q=80"
+                                alt="Portfolio Image" class="img-fluid rounded-3"
+                                style="max-height: 220px; object-fit: cover;">
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </article>
@@ -254,7 +334,7 @@
             <div class="col-md-6 col-12 mb-3 d-flex flex-column">
                 <ul class="list-group h-100 w-100 d-flex flex-column">
                     <!-- list 1 (Title)-->
-                    <li class="list-group-item py-4" style="border-color: #e5f1fd; background: #f4f8fe;">
+                    <li class="list-group-item py-4" style="border-color: #b4cfeace; background: #f4f8fe;">
                         <h5 class="px-2 m-0">
                             <span
                                 class="border border-1 text-light rounded-circle me-3 d-inline-flex align-items-center justify-content-center"
@@ -264,7 +344,7 @@
                     </li>
 
                     <!-- list 2 (What I did)-->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #e5f1fd;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #b4cfeace;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-file border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #dce6fe; color: #0043d5b7;"></i>
@@ -279,7 +359,7 @@
                     </li>
 
                     <!-- list 3 (What I learned) -->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #e5f1fd;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #b4cfeace;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-comment-nodes border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #dce6fe; color: #0043d5b7;"></i>
@@ -294,7 +374,7 @@
                     </li>
 
                     <!-- list 4 (Challenge) -->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #e5f1fd;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #b4cfeace;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-trophy border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #dce6fe; color: #0043d5b7;"></i>
@@ -309,7 +389,7 @@
                     </li>
 
                     <!-- list 5 (Next step) -->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #e5f1fd;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #b4cfeace;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-arrows-turn-right border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #dce6fe; color: #0043d5b7;"></i>
@@ -324,7 +404,7 @@
                     </li>
 
                     <!-- list 6 (Card section) -->
-                    <li class="list-group-item py-3 flex-grow-1 d-flex flex-column" style="border-color: #e5f1fd;">
+                    <li class="list-group-item py-3 flex-grow-1 d-flex flex-column" style="border-color: #b4cfeace;">
                         <div class="card h-100 border border-2 border-light w-100" style="background-color: #edf6f1;">
                             <div class="card-body ms-2">
                                 <h5 class="my-2" style="text-decoration: underline 2px; text-underline-offset: 3px;">
@@ -346,7 +426,7 @@
             <div class="col-md-6 col-12 mb-3 d-flex flex-column">
                 <ul class="list-group h-100 w-100 d-flex flex-column">
                     <!-- list 1 (Title)-->
-                    <li class="list-group-item py-4" style="border-color: #edebfe; background: #faf8fd;">
+                    <li class="list-group-item py-4" style="border-color: #c8c3f5; background: #faf8fd;">
                         <h5 class="px-2 m-0">
                             <span
                                 class="border border-1 text-light rounded-circle me-3 d-inline-flex align-items-center justify-content-center"
@@ -356,7 +436,7 @@
                     </li>
 
                     <!-- list 2 (What I did)-->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #e4e0fd;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #c8c3f5;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-file border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #e4e0fd; color: #3931b6;"></i>
@@ -371,7 +451,7 @@
                     </li>
 
                     <!-- list 3 (What I learned) -->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #edebfe;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #c8c3f5;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-comment-nodes border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #e4e0fd; color: #3931b6;"></i>
@@ -386,7 +466,7 @@
                     </li>
 
                     <!-- list 4 (Challenge) -->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #edebfe;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #c8c3f5;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-trophy border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #e4e0fd; color: #3931b6;"></i>
@@ -400,7 +480,7 @@
                     </li>
 
                     <!-- list 5 (Next step) -->
-                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #edebfe;">
+                    <li class="list-group-item py-3 flex-grow-1" style="border-color: #c8c3f5;">
                         <div class="px-2 m-0 d-flex align-items-start gap-3">
                             <i class="fa-solid fa-arrows-turn-right border border-1 border-light rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                                 style="width: 40px; height: 40px; background-color: #e4e0fd; color: #3931b6;"></i>
@@ -414,7 +494,7 @@
                     </li>
 
                     <!-- list 6 (Card section) -->
-                    <li class="list-group-item py-3 flex-grow-1 d-flex flex-column" style="border-color: #edebfe;">
+                    <li class="list-group-item py-3 flex-grow-1 d-flex flex-column" style="border-color: #c8c3f5;">
                         <div class="card h-100 border border-2 border-light w-100" style="background-color: #edf6f1;">
                             <div class="card-body ms-2">
                                 <h5 class="my-2" style="text-decoration: underline 2px; text-underline-offset: 3px;">
@@ -472,6 +552,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </article>
     </div>
