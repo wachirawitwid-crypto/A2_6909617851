@@ -22,6 +22,15 @@ body {
     border-bottom: #2e3a55 solid 2px;
 }
 
+@keyframes swipeAnimation {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+.animate-swipe {
+  animation: swipeAnimation 1.5s infinite ease-in-out;
+}
+
 #about_me .col-4 {
   flex: 0 0 200px; 
   max-width: 200px;
